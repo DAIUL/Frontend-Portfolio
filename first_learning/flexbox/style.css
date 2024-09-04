@@ -1,0 +1,80 @@
+:root{
+	--lighter-color: #202020;
+	--shadow: #00000030 0px 0px 10px 0px;
+	--transition: 0.3s ease-in-out;
+}
+
+body{
+	background-color: black;
+	color: white;
+	font-family: "SUSE", sans-serif;
+	text-align: center;
+	margin: auto;
+}
+
+.card1,
+.card2,
+.card3{
+	background-color: var(--lighter-color);
+	border-radius: 12px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+	transition: var(--transition);
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover{
+	scale: 1.02;
+	box-shadow: var(--shadow);
+}
+
+.icon1 {
+	height: 60px;
+}
+.icon2 {
+	height: 100px;
+}
+.icon3 {
+	height: 32px;
+}
+
+.flex-card{
+	width: 90%;
+	max-width: 1080px;
+	margin: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.flex-card > div {
+	flex: 1;
+}
+
+.card1 {
+	min-width: 160px;
+	height: 165px;
+}
+.card2 {
+	min-width: 330px;
+	height: 340px;
+}
+.card3 {
+	min-width: 330px;
+	height: 80px;
+	flex-direction: row;
+}
+
+.c1,
+.c2,
+.c3 {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	min-width: 330px;
+}
